@@ -1,0 +1,13 @@
+
+## 1. Why does AI Assertion matters for testing dynamic content?
+	- Traditional assertions require an exact string match so they break the moment wording changes even slightly.
+	Ex: if a product team A/B tests different confirmation copy, translates the site or the content itself becomes
+	AI generated and varies each time. A semantic/LLM based assertion confirms if the message correctly confirms the order,
+	so it keeps working correctly regardless of exact phrasing, as long as the underlying meaning is right. This matters 
+	increasingly for real-world testing, since more UI content (chatbot responses, personalized messages, AI-generated summaries)
+	is dynamic by design rather than fixed text
+
+## 2. Performance testing - 
+Performance testing verifies an application holds up under concurrent load, not just that it works for one user at a time. 
+This matters especially for AI-integrated features, since LLM API calls tend to be slower and more variable than traditional 
+endpoints — an app that works fine in manual testing can still degrade badly under real traffic if AI calls become a bottleneck.
