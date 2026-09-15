@@ -3,16 +3,16 @@ evaluating AI response quality directly (prompt engineering + LLM evals),
 verifying AI-augmented applications work correctly end-to-end (AI-assisted 
 test generation + semantic assertions in UI automation), and 
 confirming systems hold up under load (performance testing).
-Build while transitioning from 15 years of QA experience into AI/LLM-focused quality engineering.
+Built while transitioning from 15 years of QA experience into AI/LLM-focused quality engineering.
 
 ## 1. Prompt Engineering & LLM Evaluation ('response-evals/')
 **What's tested:** A media/streaming support chatbot evaluated across 5 scenarios - normal Q&A, 
-prompt injection resistance, competitor/off-topic handling, tine under hostility, and context continuity
+prompt injection resistance, competitor/off-topic handling, tone under hostility, and context continuity
 **What I found:** The buffering question failed because the system prompt scoped the bot to billing-only topics,
 revealing a mismatch between prompt design and test design.
 **What I would add next:** True multi-turn conversation testing using promptfoo's history feature; a bias/fairness eval slice.
 
-## 2. AI- Augmented UI Automation ('ui-and-performace/')
+## 2. AI- Augmented UI Automation ('ui-and-performance/')
 **What's tested:** A playwright suite covering login (happy path + edge cases), a full checkout flow, AI-generated
 edge-case suggestions (human-reviewed) and a semantic LLM-based assertion on dynamic confirmation text.
 **What I found:** An AI-suggested test case revealed the login field doesn't trim whitespace on username input - 
